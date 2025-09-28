@@ -1,0 +1,10 @@
+[Unit]
+Description=Handle laptop lid events for Hyprland
+After=graphical-session.target
+
+[Service]
+ExecStart=%h/.local/bin/hyprlid.sh
+Restart=always
+
+[Install]
+WantedBy=default.target
